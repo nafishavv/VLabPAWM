@@ -1,0 +1,173 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #1976d2 !important; /* Warna header yang lebih menarik */
+    color: #ffffff ; /* Teks putih */
+    padding: 20px 0; /* Padding lebih besar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff); 
+}
+
+/* Judul dan elemen lainnya */
+h1 {
+    font-size: 3.5rem; /* Ukuran judul lebih besar */
+    font-weight: bold;
+    color: #ffffff; /* Warna teks judul */
+    text-align: center; /* Rata tengah */
+    margin: 0; /* Hilangkan margin atas */
+}
+
+h3 {
+    color: #424242; /* Warna teks hasil gaya */
+    margin-top: 20px; /* Jarak dari elemen di atas */
+}
+
+h2, label, button {
+    font-family: 'Poppins', sans-serif; /* Konsisten di seluruh elemen */
+}
+
+
+
+/* Navigation Bar */
+nav {
+    background-color: #2C3E50; /* Darker shade for contrast */
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px; /* Spacing between links */
+}
+
+nav ul li {
+    font-size: 1.2rem; /* Larger font size */
+}
+
+nav a {
+    color: #ECF0F1 !important; /* Softer white */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+nav a:hover {
+    color: #1ABC9C; /* Subtle hover effect */
+}
+
+/* Welcome Section */
+main h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #34495E; /* Soft dark blue for elegance */
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.simulasi-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.simulasi {
+    width: 300px;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.simulasi:hover {
+    transform: scale(1.02);
+}
+
+.simulasi img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Tombol View Course di bawah gambar */
+.view-course {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; /* Tambahkan transisi */
+}
+
+.view-course:hover {
+    background-color: #004d40;
+    transform: scale(1.05); /* Efek sedikit zoom saat hover */
+}
+
+/* Tombol Coming Soon */
+.coming-soon {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #f39c12; /* Warna oranye */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: not-allowed; /* Menunjukkan tidak bisa diklik */
+    transition: background-color 0.3s;
+}
+
+.coming-soon:hover {
+    background-color: #e67e22; /* Warna oranye lebih gelap saat hover */
+}
+
+/* Tombol Kembali */
+#kembali {
+    margin-top: 30px; /* Jarak yang lebih besar */
+    padding: 10px 20px; /* Padding yang lebih besar */
+    background-color: #00796b; /* Warna tombol */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#kembali:hover {
+    background-color: #004d40; /* Warna saat hover */
+}
+
+/* Canvas untuk simulasi */
+canvas {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
